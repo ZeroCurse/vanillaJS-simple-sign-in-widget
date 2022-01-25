@@ -7,7 +7,7 @@
     <title>Simple Web Page</title>
     <style>
       h1 {
-        margin: 3em 0;
+        margin: 2em 0;
       }
     </style>
     <!-- widget stuff here -->
@@ -25,6 +25,7 @@
       <button id="logout" class="button" onclick="logout()" style="display: none">Logout</button>
     </div>
     <script type="text/javascript">
+      
       const oktaSignIn = new OktaSignIn({
         baseUrl: "https://zerocurse.okta.com",
         redirectUri: 'http://localhost:8080/login/callback',
@@ -58,6 +59,5 @@
         location.reload();
       }
     </script>
-    <div id="widget-container"></div>
   </body>
 </html>
